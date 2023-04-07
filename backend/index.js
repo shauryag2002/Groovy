@@ -6,7 +6,13 @@ const authRoute = require("./routes/auth");
 const userRoute = require("./routes/user");
 const postRoute = require("./routes/post");
 const cors = require("cors");
+const fileUpload = require("express-fileupload");
 app.use(cors());
+app.use(
+  fileUpload({
+    useTempFiles: true,
+  })
+);
 mongoose
   .connect(
     "mongodb+srv://shaurya:shaurya@cluster0.bqbj0e4.mongodb.net/?retryWrites=true&w=majority"
