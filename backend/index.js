@@ -31,8 +31,8 @@ app.get("/", function (req, res) {
 // db.sync()
 // .then(
 // function(){
-app.listen("5000", function () {
-  console.log("server started on http://localhost:5000");
+app.listen("6000", function () {
+  console.log("server started on http://localhost:6000");
   // })
 });
 // .catch(function(err){
